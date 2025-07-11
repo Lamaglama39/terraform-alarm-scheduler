@@ -13,7 +13,8 @@ provider "aws" {
 }
 
 module "alarm_scheduler" {
-  source = "../../"
+  source  = "Lamaglama39/alarm-scheduler/aws"
+  version = "1.0.0"
 
   name = var.name
 
@@ -30,7 +31,7 @@ module "alarm_scheduler" {
   # Schedule configuration
   disable_schedule_expression = var.disable_schedule_expression
   enable_schedule_expression  = var.enable_schedule_expression
-  schedule_timezone          = var.schedule_timezone
+  schedule_timezone           = var.schedule_timezone
 
   tags = var.tags
 }

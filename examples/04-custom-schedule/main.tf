@@ -14,7 +14,8 @@ provider "aws" {
 
 # Example showing custom scheduling patterns for different use cases
 module "alarm_scheduler" {
-  source = "../../"
+  source  = "Lamaglama39/alarm-scheduler/aws"
+  version = "1.0.0"
 
   name = var.name
 
@@ -26,7 +27,7 @@ module "alarm_scheduler" {
   # Custom schedule configuration
   disable_schedule_expression = var.disable_schedule_expression
   enable_schedule_expression  = var.enable_schedule_expression
-  schedule_timezone          = var.schedule_timezone
+  schedule_timezone           = var.schedule_timezone
 
   # Create SNS topic for notifications
   create_sns_topic    = true
