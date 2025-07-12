@@ -19,7 +19,6 @@ A Terraform module for creating CloudWatch alarm schedulers using EventBridge Sc
 ```hcl
 module "alarm_scheduler" {
   source  = "Lamaglama39/alarm-scheduler/aws"
-  version = "1.0.0"
   
   name = "my-app"
   
@@ -45,7 +44,6 @@ module "alarm_scheduler" {
 ```hcl
 module "alarm_scheduler" {
   source  = "Lamaglama39/alarm-scheduler/aws"
-  version = "1.0.0"
   
   name = "my-app"
   
@@ -100,7 +98,6 @@ module "alarm_scheduler" {
 ```hcl
 module "alarm_scheduler" {
   source  = "Lamaglama39/alarm-scheduler/aws"
-  version = "1.0.0"
   
   name = "business-monitoring"
   

@@ -14,8 +14,7 @@ provider "aws" {
 
 # Example showing custom scheduling patterns for different use cases
 module "alarm_scheduler" {
-  source  = "Lamaglama39/alarm-scheduler/aws"
-  version = "1.0.0"
+  source = "Lamaglama39/alarm-scheduler/aws"
 
   name = var.name
 

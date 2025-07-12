@@ -14,8 +14,7 @@ provider "aws" {
 
 # Example of creating alarms that use an existing SNS topic
 module "alarm_scheduler" {
-  source  = "Lamaglama39/alarm-scheduler/aws"
-  version = "1.0.0"
+  source = "Lamaglama39/alarm-scheduler/aws"
 
   name = var.name
 
